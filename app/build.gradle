@@ -40,6 +40,8 @@ android {
 dependencies {
 
     implementation fileTree(dir: "libs", include: ["*.jar"])
+
+    // version 1.7.0 causes Duplicate class exception in withoutAds flavor
     implementation "androidx.appcompat:appcompat:1.6.1"
     implementation "androidx.constraintlayout:constraintlayout:2.1.4"
 
