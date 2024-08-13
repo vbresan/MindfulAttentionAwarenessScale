@@ -1,0 +1,15 @@
+*.iml
+.gradle
+/local.properties
+/.idea/
+.DS_Store
+/build
+/captures
+.externalNativeBuild
+.cxx
+/gradle/wrapper/gradle-wrapper.jar
+/gradlew
+/gradlew.bat
+/app/release/
+/app/build/
+/app/src/withAds/res/values/donottranslate_secrets.xml

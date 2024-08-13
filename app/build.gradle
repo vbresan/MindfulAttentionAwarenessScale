@@ -1,0 +1,47 @@
+apply plugin: "com.android.application"
+
+android {
+    namespace "biz.binarysolutions.mindfulscale"
+    compileSdk 34
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
+    }
+
+    defaultConfig {
+        applicationId "biz.binarysolutions.mindfulscale"
+        minSdk 21
+        targetSdk 34
+        versionCode 4
+        versionName "1.0.3"
+
+        setProperty("archivesBaseName", "$applicationId-$versionName")
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile("proguard-android-optimize.txt"), "proguard-rules.pro"
+        }
+    }
+
+    flavorDimensions = ["ads"]
+    productFlavors {
+        withAds {
+            dimension "ads"
+        }
+        withoutAds {
+            dimension "ads"
+        }
+    }
+}
+
+dependencies {
+
+    implementation fileTree(dir: "libs", include: ["*.jar"])
+    implementation "androidx.appcompat:appcompat:1.6.1"
+    implementation "androidx.constraintlayout:constraintlayout:2.1.4"
+
+    withAdsImplementation "com.google.android.gms:play-services-ads:23.2.0"
+}

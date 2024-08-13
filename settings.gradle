@@ -1,0 +1,2 @@
+include ':app'
+rootProject.name = "Mindful Attention Awareness Scale"

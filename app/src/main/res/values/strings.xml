@@ -1,0 +1,45 @@
+<resources>
+    <string name="app_name">Mindful Attention Awareness Scale</string>
+
+    <string name="description">The MAAS is a 15-item scale designed to assess a core characteristic of dispositional mindfulness, namely, open or receptive awareness of and attention to what is taking place in the present.\n\nThe scale shows strong psychometric properties and has been validated with college, community, and cancer patient samples.\n\nCorrelational, quasi-experimental, and laboratory studies have shown that the MAAS taps a unique quality of consciousness that is related to, and predictive of, a variety of self-regulation and well-being constructs.\n\nThe measure takes 10 minutes or less to complete.</string>
+    <string name="button_start_pretest">Measure your level of mindfulness</string>
+
+    <string name="pretest_title">Day-to-Day Experiences</string>
+    <string name="pretest_description">A collection of statements about your everyday experience follows. Using the 1–6 scale below, please indicate how frequently or infrequently you currently have each experience.\n\nPlease answer according to what really reflects your experience rather than what you think your experience should be.\n\nPlease treat each item separately from every other item.</string>
+    <string name="button_start_test">Start</string>
+
+    <string name="statement01">I could be experiencing some emotion and not be conscious of it until some time later.</string>
+    <string name="statement02">I break or spill things because of carelessness, not paying attention, or thinking of something else.</string>
+    <string name="statement03">I find it difficult to stay focused on what’s happening in the present.</string>
+    <string name="statement04">I tend to walk quickly to get where I’m going without paying attention to what I experience along the way.</string>
+    <string name="statement05">I tend not to notice feelings of physical tension or discomfort until they really grab my attention.</string>
+    <string name="statement06">I forget a person’s name almost as soon as I’ve been told it for the first time.</string>
+    <string name="statement07">It seems I am “running on automatic,” without much awareness of what I’m doing.</string>
+    <string name="statement08">I rush through activities without being really attentive to them.</string>
+    <string name="statement09">I get so focused on the goal I want to achieve that I lose touch with what I’m doing right now to get there.</string>
+    <string name="statement10">I do jobs or tasks automatically, without being aware of what I’m doing.</string>
+    <string name="statement11">I find myself listening to someone with one ear, doing something else at the same time.</string>
+    <string name="statement12">I drive places on ‘automatic pilot’ and then wonder why I went there.</string>
+    <string name="statement13">I find myself preoccupied with the future or the past.</string>
+    <string name="statement14">I find myself doing things without paying attention.</string>
+    <string name="statement15">I snack without being aware that I’m eating.</string>
+
+    <string name="radio1">Almost always</string>
+    <string name="radio2">Very frequently</string>
+    <string name="radio3">Somewhat frequently</string>
+    <string name="radio4">Somewhat infrequently</string>
+    <string name="radio5">Very infrequently</string>
+    <string name="radio6">Almost never</string>
+
+    <string name="back">Back</string>
+    <string name="next">Next</string>
+
+    <string name="score_text">Your score is:</string>
+
+    <string name="about_score">About the score</string>
+    <string name="retake_test">Retake the test</string>
+
+    <string name="become_more_mindfull">Become more mindful.\nInstall our app with free meditation audio guides.</string>
+    <string name="find_out_more">Find out more</string>
+
+</resources>
