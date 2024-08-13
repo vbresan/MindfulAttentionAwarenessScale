@@ -39,6 +39,8 @@ android {
 
 dependencies {
 
+    lintChecks 'com.android.security.lint:lint:1.0.0'
+
     implementation fileTree(dir: "libs", include: ["*.jar"])
 
     // version 1.7.0 causes Duplicate class exception in withoutAds flavor
