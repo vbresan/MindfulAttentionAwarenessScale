@@ -1,0 +1,15 @@
+# Mindful Attention Awareness Scale (MAAS)
+_Find out how mindful you are on a scale of 1 to 6._
+
+## About
+
+The MAAS is a 15-item scale designed to assess a core characteristic of dispositional mindfulness, namely, open or receptive awareness of and attention to what is taking place in the present.
+
+The scale shows strong psychometric properties and has been validated with college, community, and cancer patient samples.
+
+Correlational, quasi-experimental, and laboratory studies have shown that the MAAS taps a unique quality of consciousness that is related to, and predictive of, a variety of self-regulation and well-being constructs.
+
+The measure takes 10 minutes or less to complete.
+
+Reference:
+Brown, K.W. & Ryan, R.M. (2003). The benefits of being present: Mindfulness and its role in psychological well-being. Journal of Personality and Social Psychology, 84, 822-848.

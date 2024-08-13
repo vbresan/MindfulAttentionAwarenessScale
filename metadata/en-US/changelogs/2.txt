@@ -1,0 +1,3 @@
+1.0.1 (2020.10.26)
+
+* adding link to the mindfulness meditation app
