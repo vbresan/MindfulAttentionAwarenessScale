@@ -8,7 +8,7 @@ import android.os.Bundle;
 import androidx.appcompat.app.AppCompatActivity;
 
 /**
- * It doesn't have splash screen anyway.
+ * It doesn't have a splash screen anyway.
  */
 @SuppressLint("CustomSplashScreen")
 public class LaunchActivity extends AppCompatActivity {
