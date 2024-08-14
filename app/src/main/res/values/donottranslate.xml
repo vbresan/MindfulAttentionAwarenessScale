@@ -1,5 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+
+    <string name="current_progress">%1$d/15</string>
+
+    <string name="score_min">0.0</string>
+    <string name="score_max">6.0</string>
+
+    <string name="meditation_app_url">https://github.com/vbresan/MindfulnessMeditation/</string>
+
     <string name="extra_key_test_index">biz.binarysolutions.mindfulscale.TEST_INDEX</string>
     <string name="extra_key_score">biz.binarysolutions.mindfulscale.SCORE</string>
 </resources>

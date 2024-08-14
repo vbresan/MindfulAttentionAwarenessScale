@@ -1,12 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:gravity="center_horizontal"
     android:orientation="vertical"
-    tools:context=".IntroActivity"
     >
 
     <TextView
@@ -14,12 +12,13 @@
         android:layout_height="wrap_content"
         android:padding="15dp"
         android:text="@string/app_name"
-        android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+    />
 
     <TextView
         android:id="@+id/textViewDescription"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="0dp"
         android:padding="15dp"
         android:text="@string/description"
         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
@@ -28,9 +27,9 @@
     />
 
     <Button
+        android:id="@+id/buttonStartPretest"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:onClick="onButtonStartPretestClick"
         android:text="@string/button_start_pretest"
     />
 

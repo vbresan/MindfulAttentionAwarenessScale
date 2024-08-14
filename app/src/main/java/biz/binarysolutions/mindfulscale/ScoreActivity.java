@@ -8,10 +8,13 @@ import android.content.pm.PackageManager;
 import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
+
+import java.util.Locale;
 
 /**
  *
@@ -47,7 +50,8 @@ public class ScoreActivity extends AppCompatActivity {
             return;
         }
 
-        view.setText(String.format("%.2f", score));
+        String text = String.format(Locale.getDefault(), "%.2f", score);
+        view.setText(text);
     }
 
     /**
@@ -84,27 +88,11 @@ public class ScoreActivity extends AppCompatActivity {
         view.setVisibility(visibility);
     }
 
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        ((App) getApplication()).showAd(this);
-
-        SharedPreferences preferences =
-            getApplicationContext().getSharedPreferences("score", MODE_PRIVATE);
-        String key = getString(R.string.extra_key_score);
-        score = preferences.getFloat(key, 0.0f);
-
-        setContentView(R.layout.activity_score);
-        displayScore();
-        displayProgress();
-        displayMeditationAppLink();
-    }
-
     /**
      *
      * @param view
      */
-    public void displayAboutScore(View view) {
+    private void displayAboutScore(View view) {
 
         AlertDialog.Builder builder = new AlertDialog.Builder(this)
             .setTitle(R.string.about_score)
@@ -119,7 +107,7 @@ public class ScoreActivity extends AppCompatActivity {
      *
      * @param view
      */
-    public void retakeTest(View view) {
+    private void retakeTest(View view) {
         startActivity(new Intent(this, PretestActivity.class));
     }
 
@@ -127,12 +115,53 @@ public class ScoreActivity extends AppCompatActivity {
      *
      * @param view
      */
-    public void findOutMore(View view) {
+    private void learnMore(View view) {
 
-        String url = "https://github.com/vbresan/MindfulnessMeditation/";
+        String url = getString(R.string.meditation_app_url);
 
         Intent intent = new Intent(Intent.ACTION_VIEW);
         intent.setData(Uri.parse(url));
         startActivity(intent);
+    }
+
+    /**
+     *
+     */
+    private void setButtonListeners() {
+
+        Button button;
+
+        button = findViewById(R.id.buttonAboutScore);
+        if (button != null) {
+            button.setOnClickListener(this::displayAboutScore);
+        }
+
+        button = findViewById(R.id.buttonRetakeTest);
+        if (button != null) {
+            button.setOnClickListener(this::retakeTest);
+        }
+
+        button = findViewById(R.id.buttonLearnMore);
+        if (button != null) {
+            button.setOnClickListener(this::learnMore);
+        }
+    }
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        ((App) getApplication()).showAd(this);
+
+        SharedPreferences preferences =
+            getApplicationContext().getSharedPreferences("score", MODE_PRIVATE);
+        String key = getString(R.string.extra_key_score);
+        score = preferences.getFloat(key, 0.0f);
+
+        setContentView(R.layout.activity_score);
+        setButtonListeners();
+
+        displayScore();
+        displayProgress();
+        displayMeditationAppLink();
     }
 }

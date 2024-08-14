@@ -53,17 +53,19 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="0.0"
+                    android:text="@string/score_min"
                 />
+                <!-- Spacer, in order not to include ConstraintLayout library -->
                 <LinearLayout
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
+                    tools:ignore="UselessLeaf"
                 />
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="6.0"
+                    android:text="@string/score_max"
                 />
             </LinearLayout>
         </LinearLayout>
@@ -91,25 +93,25 @@
                     android:paddingBottom="5dp"
                 />
                 <Button
-                    android:text="@string/find_out_more"
+                    android:id="@+id/buttonLearnMore"
+                    android:text="@string/learn_more"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:onClick="findOutMore"
                 />
             </LinearLayout>
 
             <Button
+                android:id="@+id/buttonAboutScore"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/about_score"
-                android:onClick="displayAboutScore"
             />
 
             <Button
+                android:id="@+id/buttonRetakeTest"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/retake_test"
-                android:onClick="retakeTest"
             />
         </LinearLayout>
     </LinearLayout>

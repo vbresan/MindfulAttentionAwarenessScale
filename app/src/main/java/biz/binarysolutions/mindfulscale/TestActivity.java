@@ -1,8 +1,5 @@
 package biz.binarysolutions.mindfulscale;
 
-import androidx.appcompat.app.AppCompatActivity;
-
-import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
@@ -10,7 +7,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
-import java.util.Arrays;
+import androidx.appcompat.app.AppCompatActivity;
 
 public class TestActivity extends AppCompatActivity {
 
@@ -32,7 +29,7 @@ public class TestActivity extends AppCompatActivity {
         R.string.statement15
     };
 
-    private static int[] scores =
+    private static final int[] scores =
         { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
 
     private int index = 0;
@@ -60,7 +57,8 @@ public class TestActivity extends AppCompatActivity {
             return;
         }
 
-        view.setText((index + 1) + "/15");
+        String text = getString(R.string.current_progress, index + 1);
+        view.setText(text);
     }
 
     /**
@@ -102,7 +100,7 @@ public class TestActivity extends AppCompatActivity {
             getApplicationContext().getSharedPreferences("score", MODE_PRIVATE);
         SharedPreferences.Editor editor = preferences.edit();
         editor.putFloat(key, value);
-        editor.commit();
+        editor.apply();
 
         startActivity(new Intent(this, ScoreActivity.class));
     }
@@ -120,26 +118,13 @@ public class TestActivity extends AppCompatActivity {
         view.setEnabled(true);
     }
 
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_test);
-
-        Intent intent = getIntent();
-        String key    = getString(R.string.extra_key_test_index);
-        index = intent.getIntExtra(key, 0);
-
-        displayStatement();
-        displayProgress();
-    }
-
     /**
      *
      * @param v
      */
-    public void onNextClicked(View v) {
+    private void onButtonNextClicked(View v) {
 
-        if (index < 14) {
+        if (index < statements.length - 1) {
             showNextStatement();
         } else {
             showResult();
@@ -150,30 +135,67 @@ public class TestActivity extends AppCompatActivity {
      *
      * @param view
      */
-    public void onRadioButtonClicked(View view) {
+    private void onRadioButtonClicked(View view) {
 
         int id = view.getId();
-        switch (id) {
-            case R.id.radio1:
-                scores[index] = 1;
-                break;
-            case R.id.radio2:
-                scores[index] = 2;
-                break;
-            case R.id.radio3:
-                scores[index] = 3;
-                break;
-            case R.id.radio4:
-                scores[index] = 4;
-                break;
-            case R.id.radio5:
-                scores[index] = 5;
-                break;
-            case R.id.radio6:
-                scores[index] = 6;
-                break;
+        if (id == R.id.radio1) {
+            scores[index] = 1;
+        } else if (id == R.id.radio2) {
+            scores[index] = 2;
+        } else if (id == R.id.radio3) {
+            scores[index] = 3;
+        } else if (id == R.id.radio4) {
+            scores[index] = 4;
+        } else if (id == R.id.radio5) {
+            scores[index] = 5;
+        } else if (id == R.id.radio6) {
+            scores[index] = 6;
         }
 
         enableNextButton();
+    }
+
+    /**
+     *
+     */
+    private void setButtonListeners() {
+
+        Button button;
+
+        button = findViewById(R.id.buttonNext);
+        if (button != null) {
+            button.setOnClickListener(this::onButtonNextClicked);
+        }
+
+        int[] radioButtonIds = {
+            R.id.radio1,
+            R.id.radio2,
+            R.id.radio3,
+            R.id.radio4,
+            R.id.radio5,
+            R.id.radio6
+        };
+        for (int radioButtonId: radioButtonIds) {
+
+            button = findViewById(radioButtonId);
+            if (button != null) {
+                button.setOnClickListener(this::onRadioButtonClicked);
+            }
+        }
+    }
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_test);
+
+        Intent intent = getIntent();
+        String key    = getString(R.string.extra_key_test_index);
+        index = intent.getIntExtra(key, 0);
+
+        setButtonListeners();
+
+        displayStatement();
+        displayProgress();
     }
 }

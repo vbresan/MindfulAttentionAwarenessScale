@@ -4,11 +4,23 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.text.method.ScrollingMovementMethod;
 import android.view.View;
+import android.widget.Button;
 import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+/**
+ *
+ */
 public class IntroActivity extends AppCompatActivity {
+
+    /**
+     *
+     * @param view
+     */
+    private void startPretest(View view) {
+        startActivity(new Intent(this, PretestActivity.class));
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -19,13 +31,10 @@ public class IntroActivity extends AppCompatActivity {
         if (view != null) {
             view.setMovementMethod(new ScrollingMovementMethod());
         }
-    }
 
-    /**
-     *
-     * @param view
-     */
-    public void onButtonStartPretestClick(View view) {
-        startActivity(new Intent(this, PretestActivity.class));
+        Button button = findViewById(R.id.buttonStartPretest);
+        if (button != null) {
+            button.setOnClickListener(this::startPretest);
+        }
     }
 }
