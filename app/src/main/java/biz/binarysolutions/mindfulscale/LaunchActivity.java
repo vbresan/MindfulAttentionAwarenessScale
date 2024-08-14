@@ -1,17 +1,21 @@
 package biz.binarysolutions.mindfulscale;
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+/**
+ * It doesn't have splash screen anyway.
+ */
+@SuppressLint("CustomSplashScreen")
 public class LaunchActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_launch);
 
         SharedPreferences preferences =
             getApplicationContext().getSharedPreferences("score", MODE_PRIVATE);
