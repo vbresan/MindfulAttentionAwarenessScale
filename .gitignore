@@ -10,6 +10,6 @@
 /gradle/wrapper/gradle-wrapper.jar
 /gradlew
 /gradlew.bat
-/app/release/
+release/
 /app/build/
 /app/src/withAds/res/values/donottranslate_secrets.xml
