@@ -1,0 +1,5 @@
+1.0.4 (2024.11.25)
+
+(no-ads version only)
+* adding donate button
+* removing signing block from the APK file
