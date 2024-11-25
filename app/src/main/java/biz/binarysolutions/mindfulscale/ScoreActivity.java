@@ -160,6 +160,8 @@ public class ScoreActivity extends AppCompatActivity {
         setContentView(R.layout.activity_score);
         setButtonListeners();
 
+        new FlavorSpecific(this).setButtonListeners();
+
         displayScore();
         displayProgress();
         displayMeditationAppLink();

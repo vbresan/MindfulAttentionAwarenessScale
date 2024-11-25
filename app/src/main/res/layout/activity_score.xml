@@ -113,6 +113,8 @@
                 android:layout_height="wrap_content"
                 android:text="@string/retake_test"
             />
+
+            <include layout="@layout/button_donate" />
         </LinearLayout>
     </LinearLayout>
 </ScrollView>
