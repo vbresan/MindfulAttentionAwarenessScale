@@ -28,6 +28,10 @@ Translations are managed through [Weblate](https://weblate.org). App string reso
 
 Your contributions are greatly appreciated.
 
+#### Current translation status
+
+![Bar chart with current translation status](https://camo.githubusercontent.com/66b5dca96350ef5b2a85fa802d2b9a3b0fa8ce1a75e95bfe73495eea3f8fcd56/68747470733a2f2f686f737465642e7765626c6174652e6f72672f7769646765742f6d696e6466756c2d617474656e74696f6e2d61776172656e6573732d7363616c652f6170702d6d61696e2f686f72697a6f6e74616c2d6175746f2e737667 "Current translation status")
+
 #### Notes to translators
 
 When translating app string resources:
