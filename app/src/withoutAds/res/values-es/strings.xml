@@ -1,2 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources></resources>
+<resources>
+    <string name="show_gratitude">❤️ Mostrar agradecimientos ❤️</string>
+    <string name="cont">Continuar</string>
+    <string name="donate_dialog_title">Esta aplicación necesita tu apoyo</string>
+    <string name="donate_dialog_content">Esta aplicación es gratuita, de código abierto, sin publicidad ni rastreadores. Para que siga siendo así, si puedes, por favor haz una donación hoy mismo.</string>
+</resources>
