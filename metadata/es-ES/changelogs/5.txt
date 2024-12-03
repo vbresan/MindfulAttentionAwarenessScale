@@ -1,0 +1,5 @@
+1.0.4 (2024.11.25)
+
+(solo versión sin publicidad)
+* añadir botón para donar
+* eliminar el bloqueo de firma desde el archivo APK
