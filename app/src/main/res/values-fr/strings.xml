@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="description">L\'EPCA (Mindful Attention Awareness Scale en anglais) est une échelle à 15 niveaux conçue pour évaluer une caractéristique fondamentale de la pleine conscience de disposition : la sensibilisation ouverte ou réceptive aux évènements du temps présent.\n\nL\'échelle présente de solides propriétés psychométriques et a été validée avec des échantillons de patients de lycées, de différentes communautés et de patients atteints de cancer.\n\nDes études en corrélation, quasi-expérimentales et de laboratoire ont montré que l\'EPCA fait resurgir une qualité unique de la pleine conscience liée à divers constructions d\'autorégulation et de bien-être.\n\nLe test ne dure en général pas plus de 10 minutes.</string>
-    <string name="app_name">Échelle de Pleine Conscience Attentionnelle</string>
+    <string name="description">L\'ESPA (Mindful Attention Awareness Scale en anglais) est une échelle à 15 niveaux conçue pour évaluer une caractéristique fondamentale de la pleine conscience de disposition : la sensibilisation ouverte ou réceptive aux évènements du temps présent.\n\nL\'échelle présente de solides propriétés psychométriques et a été validée avec des échantillons de patients de lycées, de différentes communautés et de patients atteints de cancer.\n\nDes études en corrélation, quasi-expérimentales et de laboratoire ont montré que l\'ESPA fait resurgir une qualité unique de la pleine conscience liée à divers constructions d\'autorégulation et de bien-être.\n\nLe test ne dure en général pas plus de 10 minutes.</string>
+    <string name="app_name">Échelle de Sensibilisation à la Pleine conscience Attentionnelle</string>
     <string name="pretest_title">Expériences journalières</string>
     <string name="button_start_test">Commencer</string>
     <string name="statement01">Je pourrais être traversé d\'une émotion sans en être conscient pendant un moment.</string>
