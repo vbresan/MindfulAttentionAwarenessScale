@@ -50,7 +50,7 @@ public class ScoreActivity extends AppCompatActivity {
             return;
         }
 
-        String text = String.format(Locale.getDefault(), "%.2f", score);
+        String text = String.format(Locale.US, "%.2f", score);
         view.setText(text);
     }
 

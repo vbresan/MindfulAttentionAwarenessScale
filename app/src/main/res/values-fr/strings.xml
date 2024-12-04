@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="description">L\'EPCA (Mindful Attention Awareness Scale en anglais) est une échelle à 15 niveaux conçue pour évaluer une caractéristique fondamentale de la pleine conscience de disposition : la sensibilisation ouverte ou réceptive aux évènements du temps présent.\n\nL\'échelle présente de solides propriétés psychométriques et a été validée avec des échantillons de patients de lycées, de différentes communautés et de patients atteints de cancer.\n\nDes études en corrélation, quasi-expérimentales et de laboratoire ont montré que l\'EPCA fait resurgir une qualité unique de la pleine conscience liée à divers constructions d\'autorégulation et de bien-être.\n\nLe test ne dure en général pas plus de 10 minutes.</string>
+    <string name="app_name">Échelle de Pleine Conscience Attentionnelle</string>
+    <string name="pretest_title">Expériences journalières</string>
+    <string name="button_start_test">Commencer</string>
+    <string name="statement01">Je pourrais être traversé d\'une émotion sans en être conscient pendant un moment.</string>
+    <string name="statement02">Il m\'arrive de faire tomber des objets ou renverser des liquides sans le vouloir par manque d\'attention, en pensant à autre chose par exemple.</string>
+    <string name="statement03">J\'ai du mal à rester concentré sur ce qu\'il se passe sur l\'instant présent.</string>
+    <string name="statement04">J\'ai tendance à marcher vite pour me rendre quelque part sans faire attention à ce que je vis sur le chemin.</string>
+    <string name="statement06">J\'oublie le nom d\'une personne dès qu\'elle me l\'ait dit pour la première fois.</string>
+    <string name="statement07">Je tourne en \"mode automatique\", sans faire très attention à ce que je fais.</string>
+    <string name="statement08">Je me précipite dans mes activités sans leur consacrer beaucoup d\'attention.</string>
+    <string name="statement10">J\'effectue des tâches automatiquement, sans regarder ce que je fais.</string>
+    <string name="statement11">Il m\'arrive d\'écouter quelqu\'un d\'une oreille en faisant autre chose en même temps.</string>
+    <string name="statement13">Il m\'arrive d\'être préoccupé par le futur ou le passé.</string>
+    <string name="radio1">Presque toujours</string>
+    <string name="radio3">Plutôt fréquemment</string>
+    <string name="retake_test">Repasser le test</string>
+    <string name="become_more_mindfull">Devenez pleinement conscient.\nInstallez notre appli comprenant des guides de méditation audios gratuits.</string>
+    <string name="learn_more">En savoir plus</string>
+    <string name="button_start_pretest">Mesurer mon niveau de pleine conscience</string>
+    <string name="pretest_description">Voici une collection de déclarations sur votre expérience quotidienne suit. En utilisant l\'échelle de 1 à 6 ci-dessous, indiquez la fréquence ou la rareté de chaque expérience.\n\nVeuillez faire bien attention à répondre en fonction de ce qui reflète réellement votre expérience et non ce que vous aimeriez qu\'elle soit.\n\nVeuillez traiter chaque déclaration indépendamment.</string>
+    <string name="statement05">J\'ai tendance à ignorer involontairement des sentiments de tension physique ou d\'inconfort jusqu\'à ce qu\'ils me préoccupent vraiment.</string>
+    <string name="statement09">Je suis tellement concentré sur le but que je veux atteindre que je perds le contrôle de ce que je fais actuellement pour y arriver.</string>
+    <string name="statement14">Il m\'arrive de faire des choses sans regarder ce que je fais.</string>
+    <string name="statement12">Je me déplace quelque part en \"pilote automatique\" puis je me demande pourquoi j\'y suis allé.</string>
+    <string name="statement15">Je grignote sans remarquer que je mange.</string>
+    <string name="radio4">Plutôt rarement</string>
+    <string name="back">Retour</string>
+    <string name="radio2">Très fréquemment</string>
+    <string name="radio5">Très rarement</string>
+    <string name="radio6">Presque jamais</string>
+    <string name="score_text">Votre score est :</string>
+    <string name="next">Suivant</string>
+    <string name="about_score">A propos du score</string>
+</resources>
