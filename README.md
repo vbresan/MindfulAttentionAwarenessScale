@@ -39,3 +39,9 @@ When translating app string resources:
 
 When translating metadata:
 * It's not necessary to translate changelogs related to app releases made before your language was added.
+
+#### Translators
+
+Big thanks to:
+* French - **[Ponj](https://github.com/p6nj)**
+* Spanish - Kamborio
