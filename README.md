@@ -1,6 +1,15 @@
 # Mindful Attention Awareness Scale (MAAS)
 _Find out how mindful you are on a scale of 1 to 6._
 
+## Screenshots
+
+<p float="center">
+  <img src="https://github.com/vbresan/MindfulAttentionAwarenessScale/blob/master/metadata/en-US/images/phoneScreenshots/1.png" width="20%" alt="Screenshot about the scale" title="Screenshot about the scale" />
+  <img src="https://github.com/vbresan/MindfulAttentionAwarenessScale/blob/master/metadata/en-US/images/phoneScreenshots/2.png" width="20%" alt="Screenshot pre-test" title="Screenshot pre-test" />
+  <img src="https://github.com/vbresan/MindfulAttentionAwarenessScale/blob/master/metadata/en-US/images/phoneScreenshots/4.png" width="20%" alt="Screenshot test results" title="Screenshot test results" />
+  <img src="https://github.com/vbresan/MindfulAttentionAwarenessScale/blob/master/metadata/en-US/images/phoneScreenshots/3.png" width="60%" alt="Screenshot question sample" title="Screenshot question sample" />
+</p>
+
 ## About
 
 The MAAS is a 15-item scale designed to assess a core characteristic of dispositional mindfulness, namely, open or receptive awareness of and attention to what is taking place in the present.
@@ -13,6 +22,13 @@ The measure takes 10 minutes or less to complete.
 
 Reference:
 Brown, K.W. & Ryan, R.M. (2003). The benefits of being present: Mindfulness and its role in psychological well-being. Journal of Personality and Social Psychology, 84, 822-848.
+
+## Get it on ...
+
+[<img src="https://fdroid.gitlab.io/artwork/badge/get-it-on.png" alt="Get it on F-Droid" height="80">](https://f-droid.org/packages/biz.binarysolutions.mindfulscale/)
+[<img src="https://gitlab.com/IzzyOnDroid/repo/-/raw/master/assets/IzzyOnDroid.png" alt="Get it on IzzyOnDroid" height="80">](https://apt.izzysoft.de/fdroid/index/apk/biz.binarysolutions.mindfulscale)
+[<img src="https://raw.githubusercontent.com/andOTP/andOTP/master/assets/badges/get-it-on-github.png" alt="Get it on GitHub" height="80">](https://github.com/vbresan/MindfulAttentionAwarenessScale/releases/latest)
+[<img src="https://play.google.com/intl/en_us/badges/images/generic/en-play-badge.png" alt="Get it on Google Play" height="80">](https://play.google.com/store/apps/details?id=biz.binarysolutions.mindfulscale)
 
 ## Support and contributions
 
