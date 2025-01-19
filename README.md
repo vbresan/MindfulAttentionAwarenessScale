@@ -60,4 +60,5 @@ When translating metadata:
 
 Big thanks to:
 * French - **[Ponj](https://github.com/p6nj)**
-* Spanish - Kamborio
+* Spanish - **[Kamborio](https://github.com/Kamborio)**, gallegonovato
+* Tamil - **[தமிழ் நேரம்](https://github.com/TamilNeram)**
