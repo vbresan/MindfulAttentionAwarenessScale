@@ -1,3 +1,3 @@
-1.0.5 (2024.12.03)
+1.0.5 (2024.12.04)
 
 * ajout de la traduction en Français et en Espagnol
