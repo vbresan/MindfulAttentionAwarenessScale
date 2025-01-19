@@ -1,2 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources></resources>
+<resources>
+    <string name="show_gratitude">நன்றியுணர்வைக் காட்டு</string>
+    <string name="cont">தொடரவும்</string>
+    <string name="donate_dialog_title">இந்த பயன்பாட்டிற்கு உங்கள் உதவி தேவை</string>
+    <string name="donate_dialog_content">இந்த பயன்பாடு இலவசம், திறந்த மூல, மற்றும் விளம்பரங்கள் அல்லது டிராக்கர்கள் இல்லை. அதை அப்படியே வைத்திருக்க, உங்களால் முடிந்தால், தயவுசெய்து இன்று நன்கொடை அளிக்கவும்.</string>
+</resources>
