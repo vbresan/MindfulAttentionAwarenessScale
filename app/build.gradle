@@ -2,7 +2,7 @@ apply plugin: "com.android.application"
 
 android {
     namespace "biz.binarysolutions.mindfulscale"
-    compileSdk 34
+    compileSdk 35
 
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_17
@@ -12,9 +12,9 @@ android {
     defaultConfig {
         applicationId "biz.binarysolutions.mindfulscale"
         minSdk 21
-        targetSdk 34
-        versionCode 8
-        versionName "1.0.7"
+        targetSdk 35
+        versionCode 9
+        versionName "1.0.8"
 
         setProperty("archivesBaseName", "$applicationId-$versionName")
     }
@@ -44,11 +44,13 @@ android {
 
 dependencies {
 
-    lintChecks 'com.android.security.lint:lint:1.0.0'
+    lintChecks "com.android.security.lint:lint:1.0.3"
 
     implementation fileTree(dir: "libs", include: ["*.jar"])
 
     // version 1.7.0 causes Duplicate class exception in withoutAds flavor
     implementation "androidx.appcompat:appcompat:1.6.1"
-    withAdsImplementation "com.google.android.gms:play-services-ads:23.2.0"
+
+    // version 24.0.0+ requires min SDK 23
+    withAdsImplementation "com.google.android.gms:play-services-ads:23.6.0"
 }
