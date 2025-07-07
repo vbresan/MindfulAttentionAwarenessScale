@@ -1,0 +1,4 @@
+1.0.7. (19/01/2025)
+
+* traduction française mise à jour
+* ajout de la traduction tamoule
